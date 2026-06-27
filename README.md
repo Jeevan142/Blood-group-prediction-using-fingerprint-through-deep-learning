@@ -85,5 +85,4 @@ python app.py
 ```
 The application will run on **http://127.0.0.1:5000/**
 
-## 📬 Contact
-For queries, reach out at **tusharshinde2250@gmail.com** or connect via [LinkedIn](https://www.linkedin.com/in/tushar-shinde-262335257/).
+
