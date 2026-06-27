@@ -1,0 +1,23 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Flask
+instance/
+
+# VS Code
+.vscode/
+
+# Dataset
+dataset_blood_group/
+
+# Model (optional if very large)
+*.keras
+model/
+
+# Build files
+dist/
+
+# Node
+node_modules/

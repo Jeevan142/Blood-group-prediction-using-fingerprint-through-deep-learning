@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Group Prediction</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- Navbar -->
+  <nav class="fixed w-full bg-white/70 backdrop-blur-md shadow-sm z-50">
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
+      <div class="flex items-center gap-2">
+        <i data-lucide="heart" class="text-red-500"></i>
+        <span class="font-bold text-xl text-purple-800">BloodPrint</span>
+      </div>
+      <div class="hidden md:flex items-center gap-8 font-medium">
+        <a href="#" class="hover:text-purple-600">Home</a>
+        <a href="/about" class="hover:text-purple-600">About</a>
+        <a href="/login" class="hover:text-purple-600">Login</a>
+        <a href="/signup" class="hover:text-purple-600">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative min-h-screen flex items-center justify-center">
+    <img src="static\image.png.jpg"
+         class="absolute inset-0 w-full h-full object-cover" alt="Lab background">
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative z-10 text-center text-white px-4">
+      <h1 class="text-5xl md:text-7xl font-extrabold leading-tight">
+        Predict Blood Group <br /> Using Fingerprint
+      </h1>
+      <p class="mt-6 text-lg md:text-xl opacity-90">
+        Revolutionary technology for non-invasive blood type identification.
+      </p>
+      <a href="/signup" class="mt-8 inline-block px-8 py-4 bg-purple-600 hover:bg-purple-700 rounded-lg text-lg font-semibold shadow-lg transition">
+        Try it Now
+      </a>
+    </div>
+  </header>
+
+  <!-- How It Works -->
+  <section id="how-it-works" class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-12">How It Works</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <i data-lucide="camera" class="w-12 h-12 text-purple-600 mx-auto mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Upload Fingerprint</h3>
+          <p class="text-gray-600">Provide a clear fingerprint image for analysis.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <i data-lucide="cpu" class="w-12 h-12 text-purple-600 mx-auto mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Submit the image</h3>
+          <p class="text-gray-600">Our CNN-based deep learning model processes the input.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <i data-lucide="check-circle" class="w-12 h-12 text-purple-600 mx-auto mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Instant Prediction</h3>
+          <p class="text-gray-600">Get your predicted blood group in seconds.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Updates -->
+  <section id="latest" class="py-20">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-12">Latest Updates</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <article class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="font-semibold text-lg mb-2">New Dataset Added</h3>
+          <p class="text-gray-600 text-sm">We have expanded our dataset with 2,000 more samples for higher accuracy.</p>
+        </article>
+        <article class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="font-semibold text-lg mb-2">Improved Accuracy</h3>
+          <p class="text-gray-600 text-sm">Our model now achieves 95% accuracy across all blood group types.</p>
+        </article>
+        <article class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="font-semibold text-lg mb-2">Team Milestone</h3>
+          <p class="text-gray-600 text-sm">Our prototype has been successfully tested with real fingerprint datasets, showing promising results.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <h3 class="font-bold text-lg mb-4">Disclaimer</h3>
+        <p class="text-sm text-gray-400">This system provides predicted results and is not a substitute for medical consultation.</p>
+      </div>
+      <div>
+        <h3 class="font-bold text-lg mb-4">Quick Links</h3>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="#" class="hover:text-white">Home</a></li>
+          <li><a href="/about" class="hover:text-white">About</a></li>
+          <li><a href="/login" class="hover:text-white">Login</a></li>
+		  <li><a href="/login" class="hover:text-white">Methodology</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold text-lg mb-4">Team</h3>
+        <p class="text-gray-400">Jeevan & Team</p>
+      </div>
+      <div>
+        <h3 class="font-bold text-lg mb-4">Connect</h3>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-white"><i data-lucide="github"></i></a>
+          <a href="#" class="hover:text-white"><i data-lucide="linkedin"></i></a>
+          <a href="#" class="hover:text-white"><i data-lucide="twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center py-4 text-gray-500 text-sm border-t border-gray-800">
+      © 2025 BloodPrint. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
